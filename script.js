@@ -95,7 +95,7 @@ const translations = {
             "See the invitation",
 
         musicOff:
-            "Music offff",
+            "Music off",
 
         musicOn:
             "Music on",
@@ -1260,7 +1260,7 @@ function handleCorrectAnswer() {
 
             prepareGame();
 
-        }, 4000);
+        }, 5000);
 
     } else {
 
