@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f6f0">
+  <title>Mohamed &amp; Arwa | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600&family=Rakkas&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="language-switcher" aria-label="Language selection">
+    <button id="arBtn" type="button">العربية</button><span aria-hidden="true">|</span><button id="enBtn" class="active" type="button">English</button>
+  </div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle background music">
+    <span id="musicIcon" aria-hidden="true">♪</span><span id="musicText" data-i18n="musicOff">Music off</span>
+  </button>
+  <audio id="backgroundMusic" loop preload="auto"><source src="audio/music.mp3" type="audio/mpeg"></audio>
+
+  <main id="introScreen" class="screen active">
+    <div class="intro-content">
+      <div class="tiny-heart" aria-hidden="true">♡</div>
+      <p class="eyebrow" data-i18n="welcome">A little surprise awaits you</p>
+      <h1 data-i18n="introTitle">Something is waiting to be found...</h1>
+      <p class="intro-text" data-i18n="introText">A few little clues stand between you and a special invitation. Will you help us find them?</p>
+      <button id="startBtn" class="main-button" type="button"><span data-i18n="start">Let’s begin</span><span class="arrow" aria-hidden="true">→</span></button>
+    </div>
+  </main>
+
+  <main id="gameScreen" class="screen">
+    <div class="game-container">
+      <header class="game-header">
+        <p class="eyebrow" data-i18n="gameEyebrow">A little journey begins</p>
+        <h2 id="gameTitle">Find the heart</h2>
+        <p id="gameInstruction">Find the little heart...</p>
+      </header>
+      <div id="gameArea" class="game-area" aria-label="Choose an illustration">
+        <button class="game-item item-1" data-item="wrong" type="button" aria-label="Choice one"></button>
+        <button class="game-item item-2" data-item="wrong" type="button" aria-label="Choice two"></button>
+        <button class="game-item item-3" data-item="wrong" type="button" aria-label="Choice three"></button>
+        <button class="game-item item-4" data-item="wrong" type="button" aria-label="Choice four"></button>
+      </div>
+      <div class="progress" aria-label="Game progress">
+        <span class="progress-dot active"></span><span class="progress-line"></span>
+        <span class="progress-dot"></span><span class="progress-line"></span>
+        <span class="progress-dot"></span><span class="progress-line"></span>
+        <span class="progress-dot"></span>
+      </div>
+    </div>
+  </main>
+
+  <main id="successScreen" class="screen">
+    <div class="success-content">
+      <div id="successIcon" class="success-icon" aria-hidden="true">✦</div>
+      <p class="eyebrow" data-i18n="successSmall">One little clue found</p>
+      <h1 id="successTitle">A little closer...</h1>
+      <p id="successText">You're getting closer to the surprise.</p>
+    </div>
+  </main>
+
+  <main id="envelopeScreen" class="screen">
+    <div class="envelope-content">
+      <p class="eyebrow" data-i18n="envelopeSmall">You've found your way here...</p>
+      <div id="envelope" class="envelope" aria-hidden="true">
+        <div class="envelope-back"></div><div class="envelope-front"></div><div class="envelope-flap"></div>
+      </div>
+      <button id="openEnvelopeBtn" class="main-button" type="button"><span data-i18n="openInvitation">There's a little something inside</span><span class="arrow" aria-hidden="true">→</span></button>
+    </div>
+  </main>
+
+  <main id="photoScreen" class="screen">
+    <div class="photo-content">
+      <p class="eyebrow" data-i18n="photoEyebrow">The people behind the story</p>
+      <div class="couple-photo-frame"><img id="couplePhoto" src="images/couple.jpg" alt="Mohamed and Arwa"></div>
+      <h1 class="photo-title" data-i18n="photoTitle">And here begins a beautiful new chapter...</h1>
+      <p class="photo-text" data-i18n="photoText">Two hearts, one story, and a day we'd love to share with you.</p>
+      <button id="continueToInvitationBtn" class="main-button" type="button"><span data-i18n="continueInvitation">See the invitation</span><span class="arrow" aria-hidden="true">→</span></button>
+    </div>
+  </main>
+
+  <section id="invitationScreen" class="screen">
+    <div class="invitation-page">
+      <p class="invitation-eyebrow" data-i18n="invitationEyebrow">Together with their families</p>
+      <div class="invitation-floral" aria-hidden="true">
+        <svg viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="#9aa38f" stroke-linecap="round">
+            <path d="M145 68C120 62 96 50 75 34 61 24 48 17 30 14M95 50C92 39 87 30 78 24M115 58C111 47 112 38 117 29" stroke-width="1.2"/>
+            <path d="M175 68C200 62 224 50 245 34 259 24 272 17 290 14M225 50C228 39 233 30 242 24M205 58C209 47 208 38 203 29" stroke-width="1.2"/>
+          </g>
+          <g fill="#aab29f" opacity=".7">
+            <ellipse cx="69" cy="29" rx="4" ry="9" transform="rotate(-48 69 29)"/><ellipse cx="84" cy="39" rx="4" ry="9" transform="rotate(-58 84 39)"/><ellipse cx="99" cy="49" rx="4" ry="9" transform="rotate(-65 99 49)"/><ellipse cx="112" cy="39" rx="4" ry="9" transform="rotate(25 112 39)"/>
+            <ellipse cx="251" cy="29" rx="4" ry="9" transform="rotate(48 251 29)"/><ellipse cx="236" cy="39" rx="4" ry="9" transform="rotate(58 236 39)"/><ellipse cx="221" cy="49" rx="4" ry="9" transform="rotate(65 221 49)"/><ellipse cx="208" cy="39" rx="4" ry="9" transform="rotate(-25 208 39)"/>
+          </g>
+        </svg>
+      </div>
+
+      <h1 class="invitation-names"><span id="groomName">محمد</span><span class="ampersand">&amp;</span><span id="brideName">أروى</span></h1>
+      <p class="invitation-request" data-i18n="invitationRequest">Request the pleasure of your company<br>as they celebrate their wedding</p>
+      <div class="invitation-divider" aria-hidden="true"><span></span>♥<span></span></div>
+
+      <div class="invitation-details">
+        <div class="detail-item"><span class="detail-label" data-i18n="dateLabel">DATE</span><strong data-i18n="invitationDate">Friday, 20 November 2026</strong></div>
+        <div class="detail-item"><span class="detail-label" data-i18n="timeLabel">TIME</span><strong data-i18n="invitationTime">9:00 PM</strong></div>
+        <div class="detail-item"><span class="detail-label" data-i18n="venueLabel">VENUE</span><strong data-i18n="invitationVenue">Maryland Hall</strong></div>
+      </div>
+
+      <div class="countdown-section">
+        <p class="countdown-eyebrow" data-i18n="countdownEyebrow">Counting down to our day</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item"><strong id="countdownDays">00</strong><span data-i18n="countdownDaysLabel">Days</span></div>
+          <span class="countdown-separator">:</span>
+          <div class="countdown-item"><strong id="countdownHours">00</strong><span data-i18n="countdownHoursLabel">Hours</span></div>
+          <span class="countdown-separator">:</span>
+          <div class="countdown-item"><strong id="countdownMinutes">00</strong><span data-i18n="countdownMinutesLabel">Minutes</span></div>
+          <span class="countdown-separator">:</span>
+          <div class="countdown-item"><strong id="countdownSeconds">00</strong><span data-i18n="countdownSecondsLabel">Seconds</span></div>
+        </div>
+      </div>
+
+      <div class="message-section">
+        <p class="message-eyebrow" data-i18n="messageEyebrow">A little note</p>
+        <h2 class="message-title" data-i18n="messageTitle">For the newlyweds</h2>
+        <p class="message-text" data-i18n="messageText">Leave them a little message to remember this day by.</p>
+        <input id="guestName" class="guest-name" type="text" maxlength="40" autocomplete="name" data-i18n-placeholder="guestNamePlaceholder" placeholder="Your name">
+        <textarea id="guestMessage" class="guest-message" maxlength="500" data-i18n-placeholder="guestMessagePlaceholder" placeholder="Write something from your heart..."></textarea>
+        <button id="sendMessageBtn" class="send-message-btn" type="button" data-i18n="sendMessage">Leave your message</button>
+        <p id="messageStatus" class="message-status" role="status" aria-live="polite"></p>
+        <div id="messageThankYou" class="message-thank-you">
+          <div class="thank-you-heart" aria-hidden="true">♡</div>
+          <h3 data-i18n="thankYouTitle">Your words are now a memory.</h3>
+          <p data-i18n="thankYouText">Thank you for being part of their story.</p>
+        </div>
+      </div>
+      <p class="invitation-footer" data-i18n="invitationFooter">We can't wait to celebrate with you</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
