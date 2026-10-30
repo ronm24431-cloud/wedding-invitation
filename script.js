@@ -38,7 +38,7 @@ const translations = {
             "And someone waiting at the end of the aisle...",
 
         heartInstruction:
-            "Find the little heart...",
+            "Find the heart...",
 
         ringInstruction:
             "Now, find the ring...",
@@ -50,7 +50,7 @@ const translations = {
             "find the suit...",
 
         successSmall:
-            "One little clue found",
+            "One clue found",
 
         heartSuccess:
             "Every story starts with love",
