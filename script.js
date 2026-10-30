@@ -1260,7 +1260,7 @@ function handleCorrectAnswer() {
 
             prepareGame();
 
-        }, 5000);
+        }, 7000);
 
     } else {
 
