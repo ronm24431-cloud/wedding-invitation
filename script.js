@@ -95,7 +95,7 @@ const translations = {
             "See the invitation",
 
         musicOff:
-            "Music off",
+            "Music offff",
 
         musicOn:
             "Music on",
