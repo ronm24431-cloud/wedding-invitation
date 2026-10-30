@@ -377,3 +377,165 @@ html[dir="ltr"] body * {
 #invitationScreen .invitation-page .invitation-footer {
     color: #8B7163;
 }
+
+
+/* =================================
+   GLOBAL TYPOGRAPHY IMPROVEMENTS
+   ================================= */
+
+/* Language switcher */
+.language-switcher {
+    font-size: 14px;
+}
+
+/* Music button */
+.music-toggle {
+    font-size: 14px;
+}
+
+/* Small section labels */
+.eyebrow,
+.invitation-eyebrow,
+.countdown-eyebrow,
+.message-eyebrow {
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+/* Intro and general paragraphs */
+.intro-text,
+.success-content > p:last-child,
+.photo-text {
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* Main buttons */
+.main-button,
+.send-message-btn {
+    font-size: 14px;
+    min-height: 50px;
+}
+
+/* Game instructions */
+.game-header > p:last-child {
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* Invitation details */
+.invitation-request {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.detail-label {
+    font-size: 12px;
+    letter-spacing: .08em;
+}
+
+.detail-item strong {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Countdown */
+.countdown-item span {
+    font-size: 12px;
+}
+
+/* Guest message section */
+.message-text {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.guest-name,
+.guest-message {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.guest-message {
+    line-height: 1.9;
+}
+
+.send-message-btn {
+    font-size: 14px;
+}
+
+.message-status {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.message-thank-you p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Arabic version */
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .invitation-eyebrow,
+html[dir="rtl"] .countdown-eyebrow,
+html[dir="rtl"] .message-eyebrow {
+    font-size: 13px;
+}
+
+html[dir="rtl"] .intro-text,
+html[dir="rtl"] .success-content > p:last-child,
+html[dir="rtl"] .photo-text,
+html[dir="rtl"] .game-header > p:last-child,
+html[dir="rtl"] .invitation-request,
+html[dir="rtl"] .detail-item strong,
+html[dir="rtl"] .message-text,
+html[dir="rtl"] .guest-name,
+html[dir="rtl"] .guest-message {
+    font-size: 16px;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    .intro-text,
+    .success-content > p:last-child,
+    .photo-text {
+        font-size: 15px;
+    }
+
+    .invitation-request {
+        font-size: 14px;
+    }
+
+    .detail-label {
+        font-size: 11px;
+    }
+
+    .detail-item strong {
+        font-size: 13px;
+    }
+
+    .countdown-item span {
+        font-size: 11px;
+    }
+
+    .message-text {
+        font-size: 13px;
+    }
+
+    .guest-name,
+    .guest-message {
+        font-size: 14px;
+    }
+
+    html[dir="rtl"] .intro-text,
+    html[dir="rtl"] .success-content > p:last-child,
+    html[dir="rtl"] .photo-text,
+    html[dir="rtl"] .game-header > p:last-child,
+    html[dir="rtl"] .invitation-request,
+    html[dir="rtl"] .detail-item strong,
+    html[dir="rtl"] .message-text,
+    html[dir="rtl"] .guest-name,
+    html[dir="rtl"] .guest-message {
+        font-size: 15px;
+    }
+}
