@@ -53,25 +53,25 @@ const translations = {
             "One little clue found",
 
         heartSuccess:
-            "Every story starts with love.",
+            "Every story starts with love",
 
         ringSuccess:
-            "And grows with a promise.",
+            "And grows with a promise",
 
         dressSuccess:
-            "A beautiful day is getting closer.",
+            "A beautiful day is getting closer",
 
         suitSuccess:
             "Now, all the pieces are in place!",
 
         heartText:
-            "Let's find the next one.",
+            "Let's find the next one",
 
         ringText:
-            "There's still more to find.",
+            "There's still more to find",
 
         dressText:
-            "The big day is getting closer.",
+            "The big day is getting closer",
 
         suitText:
             "You've found them all!",
@@ -89,7 +89,7 @@ const translations = {
             "And here begins a beautiful new chapter...",
 
         photoText:
-            "Two hearts, one story, and a day we’d love to share with you.",
+            "Two hearts, one story, and a day we’d love to share with you",
 
         continueInvitation:
             "See the invitation",
@@ -157,7 +157,7 @@ const translations = {
             "For the newlyweds",
 
         messageText:
-            "Leave them a little message to remember this day by.",
+            "Leave them a little message to remember this day by",
 
         guestNamePlaceholder:
             "Your name",
@@ -169,10 +169,10 @@ const translations = {
             "Leave your message",
 
         thankYouTitle:
-            "Your words are now a memory.",
+            "Your words are now a memory",
 
         thankYouText:
-            "Thank you for being part of their story.",
+            "Thank you for being part of their story",
 
         invitationFooter:
             "We can't wait to celebrate with you"
@@ -213,7 +213,7 @@ const translations = {
             "وحد مستني أجمل لحظة في آخر الطريق...",
 
         heartInstruction:
-            "دور على القلب الصغير...",
+            "دور على القلب ...",
 
         ringInstruction:
             " دور على الخاتم...",
@@ -225,28 +225,28 @@ const translations = {
             "دور على البدلة...",
 
         successSmall:
-            "لقيت أول تفصيلة",
+            "لقيت تفصيلة",
 
         heartSuccess:
-            "كل حكاية جميلة بتبدأ بالحب.",
+            "كل حكاية جميلة بتبدأ بالحب",
 
         ringSuccess:
-            "وتكبر بوعد يجمع قلبين.",
+            "وتكبر بوعد يجمع قلبين",
 
         dressSuccess:
-            "اليوم الجميل قرب أكتر.",
+            "اليوم الجميل قرب أكتر",
 
         suitSuccess:
             "كده كل حاجة بقت في مكانها!",
 
         heartText:
-            "يلا ندور على اللي بعده.",
+            "يلا ندور على اللي بعده",
 
         ringText:
-            "لسه في حاجات تانية.",
+            "لسه في حاجات تانية",
 
         dressText:
-            "اليوم الكبير قرب.",
+            "اليوم الكبير قرب",
 
         suitText:
             " لقيت كل التفاصيل اللي كانت ناقصة...",
@@ -264,7 +264,7 @@ const translations = {
             "ومن هنا بتبدأ حكايتهم...",
 
         photoText:
-            "قلبين جمعهم الحب، وبتجمعهم رحلة العمر، وفرحة نفسنا تشاركونا فيها.",
+            "قلبين جمعهم الحب، وبتجمعهم رحلة العمر، وفرحة نفسنا تشاركونا فيها",
 
         continueInvitation:
             "شوف الدعوة",
@@ -332,7 +332,7 @@ const translations = {
             "للعروسين",
 
         messageText:
-            "سيب للعروسين كلمة حلوة تفضل ذكرى من اليوم المميز ده.",
+            "سيب للعروسين كلمة حلوة تفضل ذكرى من اليوم المميز ده",
 
         guestNamePlaceholder:
             "اسمك",
@@ -344,10 +344,10 @@ const translations = {
             "ابعت رسالتك",
 
         thankYouTitle:
-            "كلمتك هتفضل ذكرى حلوة.",
+            "كلمتك هتفضل ذكرى حلوة",
 
         thankYouText:
-            "شكرًا إنك شاركتهم فرحتهم وكنت جزء من حكايتهم.",
+            "شكرًا إنك شاركتهم فرحتهم وكنت جزء من حكايتهم",
 
         invitationFooter:
             "مستنيين نحتفل معاك"
