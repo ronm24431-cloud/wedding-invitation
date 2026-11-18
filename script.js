@@ -1622,14 +1622,7 @@ function updateMusicButton() {
 }
 
 
-/* =====================================
-   LOAD SAVED LANGUAGE
-===================================== */
 
-const savedLanguage =
-    localStorage.getItem(
-        "weddingLanguage"
-    );
 
 
 /* =====================================
