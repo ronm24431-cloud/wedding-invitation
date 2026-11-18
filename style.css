@@ -537,22 +537,22 @@ html[dir="rtl"] .guest-message {
     }
 }
 
-/* Special style for game instructions */
-#gameInstruction {
-    display: inline-block;
+/* Highlight the game instruction */
+#gameScreen .game-header #gameInstruction {
+    display: block;
     width: fit-content;
     max-width: 90%;
-    margin: 18px auto 0;
-    padding: 13px 24px;
+    margin: 20px auto 0;
+    padding: 14px 28px;
 
-    background: rgba(143, 164, 139, 0.12);
-    border: 1px solid rgba(143, 164, 139, 0.35);
-    border-radius: 18px;
+    background: #eeefe8;
+    border: 1px solid #cbd2c3;
+    border-radius: 16px;
 
-    color: #687f63;
-    font-size: 19px;
-    line-height: 1.9;
+    color: #5f6c5b !important;
+    font-size: 21px !important;
+    line-height: 2;
     text-align: center;
 
-    box-shadow: 0 4px 14px rgba(80, 100, 75, 0.06);
+    box-shadow: 0 5px 16px rgba(95, 108, 91, 0.10);
 }
