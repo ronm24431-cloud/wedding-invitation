@@ -890,6 +890,13 @@ function setLanguage(language) {
         Placeholders
     */
 
+
+
+
+
+
+   
+
     document
         .querySelectorAll("[data-i18n-placeholder]")
         .forEach(element => {
@@ -1628,6 +1635,14 @@ function updateMusicButton() {
 /* =====================================
    DEFAULT LANGUAGE
 ===================================== */
+
+const savedLanguage = localStorage.getItem("weddingLanguage");
+
+if (savedLanguage) {
+    setLanguage(savedLanguage);
+} else {
+    setLanguage("ar");
+}
 
 setLanguage("ar");
 
