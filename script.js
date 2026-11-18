@@ -1632,15 +1632,11 @@ const savedLanguage =
     );
 
 
-if (savedLanguage) {
+/* =====================================
+   DEFAULT LANGUAGE
+===================================== */
 
-    setLanguage(savedLanguage);
-
-} else {
-
-    setLanguage("en");
-
-}
+setLanguage("ar");
 
 
 /* =====================================
