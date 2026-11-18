@@ -561,27 +561,33 @@ html[dir="rtl"] .guest-message {
     position: absolute;
     inset: 0;
 
-    border: 1.3px solid rgba(125, 139, 120, 0.65);
+    border: 1.4px solid rgba(125, 139, 120, 0.8);
     border-radius: 48% 52% 46% 54% / 54% 45% 55% 46%;
     transform: rotate(-2deg);
 
     pointer-events: none;
-    animation: softGlow 3s ease-in-out infinite;
+
+    /* رسم تدريجي مع توهج ناعم */
+    clip-path: inset(0 100% 0 0);
+    animation:
+        drawOval 1.2s ease forwards,
+        softGlow 2.5s ease-in-out 1.2s infinite;
+}
+
+@keyframes drawOval {
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 @keyframes softGlow {
     0%, 100% {
-        box-shadow: 0 0 0 rgba(125, 139, 120, 0);
-        border-color: rgba(125, 139, 120, 0.45);
+        filter: drop-shadow(0 0 1px rgba(180, 190, 165, 0.3));
+        border-color: rgba(125, 139, 120, 0.65);
     }
 
     50% {
-        box-shadow: 0 0 9px rgba(180, 190, 165, 0.35);
-        border-color: rgba(125, 139, 120, 0.9);
-    }
-}
-@keyframes drawOval {
-    to {
-        clip-path: inset(0 0 0 0);
+        filter: drop-shadow(0 0 5px rgba(180, 190, 165, 0.85));
+        border-color: rgba(145, 160, 130, 1);
     }
 }
