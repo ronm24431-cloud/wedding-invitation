@@ -560,14 +560,26 @@ html[dir="rtl"] .guest-message {
     content: "";
     position: absolute;
     inset: 0;
-    border: 1px solid rgba(125, 139, 120, 0.75);
+
+    border: 1.3px solid rgba(125, 139, 120, 0.65);
     border-radius: 48% 52% 46% 54% / 54% 45% 55% 46%;
     transform: rotate(-2deg);
 
-    clip-path: inset(0 100% 0 0);
-    animation: drawOval 1.2s ease forwards;
+    pointer-events: none;
+    animation: softGlow 3s ease-in-out infinite;
 }
 
+@keyframes softGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(125, 139, 120, 0);
+        border-color: rgba(125, 139, 120, 0.45);
+    }
+
+    50% {
+        box-shadow: 0 0 9px rgba(180, 190, 165, 0.35);
+        border-color: rgba(125, 139, 120, 0.9);
+    }
+}
 @keyframes drawOval {
     to {
         clip-path: inset(0 0 0 0);
