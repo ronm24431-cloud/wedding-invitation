@@ -378,162 +378,7 @@ html[dir="rtl"] body * {
 
 
 
-/* =================================
-   LARGER & CLEARER TYPOGRAPHY
-   ================================= */
 
-/* Top controls */
-.language-switcher {
-    font-size: 15px;
-}
-
-.music-toggle {
-    font-size: 15px;
-}
-
-/* Section labels */
-.eyebrow,
-.invitation-eyebrow,
-.countdown-eyebrow,
-.message-eyebrow {
-    font-size: 14px;
-    line-height: 2;
-}
-
-/* Main paragraphs */
-.intro-text,
-.success-content > p:last-child,
-.photo-text {
-    font-size: 18px;
-    line-height: 2;
-}
-
-/* Buttons */
-.main-button,
-.send-message-btn {
-    font-size: 16px;
-    min-height: 54px;
-}
-
-/* Game instructions */
-.game-header > p:last-child {
-    font-size: 17px;
-    line-height: 2;
-}
-
-/* Invitation */
-.invitation-request {
-    font-size: 17px;
-    line-height: 2;
-}
-
-.detail-label {
-    font-size: 13px;
-    letter-spacing: .06em;
-}
-
-.detail-item strong {
-    font-size: 16px;
-    line-height: 1.9;
-}
-
-/* Countdown */
-.countdown-item strong {
-    font-size: 35px;
-}
-
-.countdown-item span {
-    font-size: 14px;
-}
-
-/* Guest message */
-.message-text {
-    font-size: 16px;
-    line-height: 2;
-}
-
-.guest-name,
-.guest-message {
-    font-size: 17px;
-    padding: 16px;
-}
-
-.guest-message {
-    line-height: 1.9;
-}
-
-.message-status,
-.message-thank-you p {
-    font-size: 16px;
-    line-height: 2;
-}
-
-/* Arabic typography */
-html[dir="rtl"] .intro-text,
-html[dir="rtl"] .success-content > p:last-child,
-html[dir="rtl"] .photo-text,
-html[dir="rtl"] .game-header > p:last-child,
-html[dir="rtl"] .invitation-request,
-html[dir="rtl"] .detail-item strong,
-html[dir="rtl"] .message-text,
-html[dir="rtl"] .guest-name,
-html[dir="rtl"] .guest-message {
-    font-size: 18px;
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-    .intro-text,
-    .success-content > p:last-child,
-    .photo-text {
-        font-size: 17px;
-    }
-
-    .game-header > p:last-child {
-        font-size: 16px;
-    }
-
-    .invitation-request {
-        font-size: 16px;
-    }
-
-    .detail-label {
-        font-size: 12px;
-    }
-
-    .detail-item strong {
-        font-size: 14px;
-    }
-
-    .countdown-item strong {
-        font-size: 30px;
-    }
-
-    .countdown-item span {
-        font-size: 12px;
-    }
-
-    .message-text {
-        font-size: 15px;
-    }
-
-    .guest-name,
-    .guest-message {
-        font-size: 16px;
-    }
-
-    html[dir="rtl"] .intro-text,
-    html[dir="rtl"] .success-content > p:last-child,
-    html[dir="rtl"] .photo-text,
-    html[dir="rtl"] .game-header > p:last-child,
-    html[dir="rtl"] .invitation-request,
-    html[dir="rtl"] .detail-item strong,
-    html[dir="rtl"] .message-text,
-    html[dir="rtl"] .guest-name,
-    html[dir="rtl"] .guest-message {
-        font-size: 17px;
-    }
-}
 
 /* Hand-drawn oval around game instruction */
 #gameScreen .game-header #gameInstruction {
@@ -657,4 +502,59 @@ html[dir="ltr"] .message-text,
 html[dir="ltr"] .message-thank-you p {
     font-family: var(--sans);
     font-weight: 500;
+}
+
+
+/* =================================
+   INVITATION - ENGLISH LAYOUT FIX
+   ================================= */
+
+html[dir="ltr"] #invitationScreen .invitation-eyebrow {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 10px;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-floral {
+    display: block;
+    width: min(260px, 75%);
+    margin: 0 auto 10px;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-names {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 8px;
+    width: 100%;
+    margin: 0 auto 12px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(38px, 10vw, 46px);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.1;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-names span {
+    flex: 0 0 auto;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-names .ampersand {
+    font-size: .58em;
+    font-weight: 400;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-request {
+    font-size: 12px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+@media (max-width: 380px) {
+    html[dir="ltr"] #invitationScreen .invitation-names {
+        font-size: 36px;
+        gap: 6px;
+    }
 }
