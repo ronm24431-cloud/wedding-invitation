@@ -558,3 +558,22 @@ html[dir="ltr"] #invitationScreen .invitation-request {
         gap: 6px;
     }
 }
+
+/* Balance English font weight */
+html[dir="ltr"] #invitationScreen .invitation-names {
+    font-weight: 500;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-names .ampersand {
+    font-weight: 500;
+}
+
+html[dir="ltr"] #invitationScreen .invitation-request,
+html[dir="ltr"] #invitationScreen .detail-item strong,
+html[dir="ltr"] #invitationScreen .message-text {
+    font-weight: 500;
+}
+
+html[dir="ltr"] #invitationScreen .message-title {
+    font-weight: 500;
+}
