@@ -784,7 +784,7 @@ const illustrations = {
    VARIABLES
 ===================================== */
 
-let currentLanguage = "en";
+let currentLanguage = "ar";
 let currentLevel = 1;
 
 
