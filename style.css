@@ -537,22 +537,39 @@ html[dir="rtl"] .guest-message {
     }
 }
 
-/* Highlight the game instruction */
+/* Hand-drawn oval around game instruction */
 #gameScreen .game-header #gameInstruction {
-    display: block;
+    position: relative;
+    display: table;
     width: fit-content;
     max-width: 90%;
-    margin: 20px auto 0;
-    padding: 14px 28px;
+    margin: 24px auto 0;
+    padding: 12px 30px;
 
-    background: #eeefe8;
-    border: 1px solid #cbd2c3;
-    border-radius: 16px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
 
-    color: #5f6c5b !important;
+    color: var(--sage-dark) !important;
     font-size: 21px !important;
-    line-height: 2;
+    line-height: 1.9;
     text-align: center;
+}
 
-    box-shadow: 0 5px 16px rgba(95, 108, 91, 0.10);
+#gameScreen .game-header #gameInstruction::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(125, 139, 120, 0.75);
+    border-radius: 48% 52% 46% 54% / 54% 45% 55% 46%;
+    transform: rotate(-2deg);
+
+    clip-path: inset(0 100% 0 0);
+    animation: drawOval 1.2s ease forwards;
+}
+
+@keyframes drawOval {
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
